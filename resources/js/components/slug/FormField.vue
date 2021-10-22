@@ -55,7 +55,7 @@ import R64Field from '../../mixins/R64Field'
 import slugify from '@/util/slugify'
 
 export default {
-  mixins: [HandlesValidationErrors, FormField],
+  mixins: [HandlesValidationErrors, FormField,R64Field],
 
   data: () => ({
     isListeningToChanges: false,
