@@ -52,7 +52,7 @@
 <script>
 import { FormField, HandlesValidationErrors } from 'laravel-nova'
 import R64Field from '../../mixins/R64Field'
-import slugify from '@util/slugify'
+import slugify from '../../util/slugify'
 
 export default {
   mixins: [HandlesValidationErrors, FormField,R64Field],
