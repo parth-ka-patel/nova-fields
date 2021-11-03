@@ -47,6 +47,12 @@ Nova.booting((Vue, router) => {
   Vue.component('detail-nova-fields-item', require('./components/items/DetailFieldItem'))
 
 
+
+  /** RadioButton */
+  Vue.component('index-nova-fields-radio', require('./components/radio-button/IndexField'));
+  Vue.component('detail-nova-fields-radio', require('./components/radio-button/DetailField'));
+  Vue.component('form-nova-fields-radio', require('./components/radio-button/FormField'));
+
   /** Date */
   Vue.component(
     'index-nova-fields-date',
