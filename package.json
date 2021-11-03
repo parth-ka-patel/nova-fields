@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "slugify": "^1.6.1",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vuedraggable": "^2.24.3"
   }
 }
