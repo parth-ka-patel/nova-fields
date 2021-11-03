@@ -26,6 +26,27 @@ Nova.booting((Vue, router) => {
   )
   Vue.component('form-nova-fields-slug', require('./components/slug/FormField'))
 
+  /** BooleanGroup */
+  Vue.component(
+      'index-nova-fields-boolean-group',
+      require('./components/boolean-group/IndexField.vue')
+  )
+  Vue.component(
+      'detail-nova-fields-boolean-group',
+      require('./components/boolean-group/DetailField.vue')
+  )
+  Vue.component(
+      'form-nova-fields-boolean-group',
+      require('./components/boolean-group/FormField.vue')
+  )
+
+  /** Items */
+  Vue.component('index-nova-fields-items', require('./components/items/IndexField'))
+  Vue.component('detail-nova-fields-items', require('./components/items/DetailField'))
+  Vue.component('form-nova-fields-items', require('./components/items/FormField'))
+  Vue.component('detail-nova-fields-item', require('./components/items/DetailFieldItem'))
+
+
   /** Date */
   Vue.component(
     'index-nova-fields-date',
