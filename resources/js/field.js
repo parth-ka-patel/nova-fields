@@ -64,6 +64,17 @@ Nova.booting((Vue, router) => {
   )
   Vue.component('form-nova-fields-child-select', require('./components/child-select/FormField'))
 
+  /** MultiSelect */
+  Vue.component('index-nova-fields-multiselect', require('./components/multiselect/IndexField'));
+  Vue.component('detail-nova-fields-multiselect', require('./components/multiselect/DetailField'));
+  Vue.component('form-nova-fields-multiselect', require('./components/multiselect/FormField'));
+  // Allow user to overwrite nova-multiselect-detail-field-value
+  if (!Vue.options.components['nova-multiselect-detail-field-value']) {
+    Vue.component(
+        'nova-multiselect-detail-field-value',
+        require('./components/multiselect/NovaMultiselectDetailFieldValue')
+    );
+  }
 
   /** Date */
   Vue.component(
